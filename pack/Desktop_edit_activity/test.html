@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar and navbar </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <section class="flex bg-black h-screen">
+      <!-- Nav -->
+        <header class="sticky top-0 ">
+            <nav class="sidebar w-[16.5rem] bg-jsd-blue pl-5 pt-5 flex flex-col">
+                <div class="header-logo relative items-center h-full">
+                <div class="header-logo relative items-center">
+                    <a href="#" class="logo h-full w-11/12 flex items-center list-none transition-all text-xl text-cyan-400 font-bold p-4 bg-white hover:bg-white hover:text-cyan-400 rounded-2xl gap-5">
+                    <img src="../picture/Dog-3.svg" class="logo-image max-h-full max-w-full" alt="Dog Logo">DOG GO</a>
+                </div>
+                <div class="flex-grow">
+                <ul class="menu-items w-11/12 list-none transition-all text-lg py-6 text-blue-950">
+                    <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+                    <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-trophy"></i> All Activity</a></li>
+                    <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-gear"></i> Setting</a></li>
+                </ul>
+                </div>
+            
+                <div class="side-bar-button w-11/12">
+                <ul class="menu-items list-none transition-all text-lg text-blue-950">
+                    <li class="item hover-bg-cyan-400 hover:bg-white rounded-2xl"><a href="#"><i class="fa-solid fa-circle-info"></i> Help</a></li>
+                    <li class="item hover-bg-cyan-400 hover:bg-white rounded-2xl"><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex grow flex-col bg-gray-500">
+            <!-- Header -->
+            <div class="bg-amber-100 border-b-2 border-gray-200">
+                <nav class="navbar cursor-pointer bg-white">
+                    <div class="flex justify-between">
+                    <div class="flex-col text-blue-950">
+                    <p class="px-5 text-xl">Welcome!</p>
+                    <p class="px-5 text-base">Kanjana Kannarest</p>
+                    </div>
+                    <div class="flex items-center gap-5 text-blue-950">
+                    <i class="fa-solid fa-bell text-xl"></i>
+                    <i class="fa-solid fa-gear text-xl"></i>
+                    <i class="fa-solid fa-user text-xl"></i>
+                    </div>
+                </div>
+                </nav>
+            </div>
+
+            <!-- Body + Side -->
+            <div class="flex h-full justify-between">
+                <!-- Body ตรงกลางที่นี่ -->
+                <div class="grow">BODY
+                    <!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div><!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div><!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div><!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div><!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div><!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div><!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+
+
+
+                <!-- Side: Lastest Activity -->
+                <article class="flex flex-col gap-3 bg-white w-[28rem] px-6">
+                    <!-- Side Header -->
+                    <div class="py-3">
+                        <h2 class="text-blue-900 text-2xl font-extrabold">Latest Activity</h2>
+                    </div>
+
+                    <!-- Activity Boxes -->
+
+                    <!-- ------Box 1------ -->
+                    <div
+                        class=" text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Tennis</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 15 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-yellow px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Up comming
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 2------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Football</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Tue 5 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-red px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                On going
+                            </div>
+                            <div class="flex justify-end gap-3">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- ------Box 3------ -->
+                    <div
+                        class="text-gray-600 font-medium bg-jsd-lightblue pl-8 pr-4 py-2 flex flex-col relative rounded-full justify-center gap-1"
+                    >
+                        <!-- Trophies -->
+                        <div class="absolute w-1/3 left-[-15%]">
+                            <img src="../picture/1.svg" alt="trophie" class="w-full h-full" />
+                        </div>
+                        <!-- Top Part-->
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl">Run</div>
+                            <div class="flex justify-end gap-3">
+                                <h3>Fri 1 DEC</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!-- Bottom Part-->
+                        <div class="flex justify-between items-center">
+                            <div
+                                class="bg-jsd-green px-1 py-0.5 text-xs text-white font-bold rounded-full"
+                            >
+                                Finished
+                            </div>
+                            <div class="flex justify-end gap-3 text">
+                                <h3>13:00</h3>
+                                <h3>30 mins</h3>
+                                <img src="../picture/clock-regular.svg" alt="clock" />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </article>
+                
+            </div>
+        </main>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

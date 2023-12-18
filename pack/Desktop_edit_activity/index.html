@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar and navbar </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+    <section>
+        
+            <nav class="sidebar h-full w-72 bg-jsd-blue p-5 flex flex-col">
+              <div class="header-logo relative items-center h-full">
+                <div class="header-logo relative items-center">
+                  <a href="#" class="logo h-full w-11/12 flex items-center list-none transition-all text-xl text-cyan-400 font-bold p-4 bg-white hover:bg-white hover:text-cyan-400 rounded-2xl">
+                    <img src="../picture/Dog-3.svg" class="logo-image max-h-full max-w-full mr-5 w-[40px]" alt="Dog Logo">DOG GO</a>
+                </div>
+              <div class="flex-grow">
+                <ul class="menu-items w-11/12 list-none transition-all text-lg py-6 text-blue-950">
+                  <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                  <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+                  <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-trophy"></i> All Activity</a></li>
+                  <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                  <li class="item hover:bg-cyan-400 hover:text-white rounded-2xl"><a href="#"><i class="fa-solid fa-gear"></i> Setting</a></li>
+                </ul>
+              </div>
+            
+              <div class="side-bar-button w-11/12">
+                <ul class="menu-items list-none transition-all text-lg text-blue-950">
+                  <li class="item hover-bg-cyan-400 hover:bg-white rounded-2xl"><a href="#"><i class="fa-solid fa-circle-info"></i> Help</a></li>
+                  <li class="item hover-bg-cyan-400 hover:bg-white rounded-2xl"><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+              </div>
+            </nav>
+      
+      <nav class="navbar cursor-pointer bg-white">
+        <div class="flex justify-between">
+        <div class="flex-col text-blue-950">
+          <p class="px-5 text-xl">Welcome!</p>
+          <p class="px-5 text-base">Kanjana Kannarest</p>
+        </div>
+        <div class="flex items-center gap-5 text-blue-950">
+          <i class="fa-solid fa-bell text-xl"></i>
+          <i class="fa-solid fa-gear text-xl"></i>
+          <i class="fa-solid fa-user text-xl"></i>
+        </div>
+      </div>
+      </nav>
+      <main class="main">
+        <div class="flex h-full w-full">
+          <div class="bg-yellow-100 w-4/5">Left</div>
+          <div class="bg-pink-100 w-2/5 text-black"><h1>Right</h1></div>
+        </div>
+      </main>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
